@@ -6,6 +6,22 @@ El proyecto incluye validaciones de datos, documentación interactiva con OpenAP
 
 > **Estado del proyecto:** backend funcional de demostración y portfolio. Puede ejecutarse localmente con PostgreSQL. **No está preparado para operar con datos reales en un entorno de producción sin los ajustes de seguridad y operación indicados en [Pendientes para producción](docs/PENDIENTES_PRODUCCION.md).** No incluye una interfaz frontend ni un despliegue público.
 
+## Vista rápida del proyecto
+
+El proyecto se ejecutó localmente y se documentó con Swagger UI. Las imágenes siguientes ayudan a visualizar sus recursos y una consulta realizada con datos de demostración; **no implican que la API esté desplegada públicamente**.
+
+### Recursos disponibles
+
+El siguiente esquema resume algunas de las rutas definidas en los controladores. **Es una ilustración generada a partir del código, no una captura real de Swagger UI.**
+
+![Resumen visual de recursos y endpoints de la API](docs/images/swagger-general.png)
+
+### Ejemplo de consulta a clientes
+
+Respuesta HTTP **200** a una solicitud `GET /api/clientes` realizada desde Swagger UI, con un JSON de datos de prueba. La captura no contiene el token JWT.
+
+![Respuesta de GET /api/clientes en Swagger UI](docs/images/consulta-clientes.png)
+
 ## Funcionalidades
 
 - Gestión de clientes, direcciones, transportistas, envíos y paquetes mediante endpoints REST.
